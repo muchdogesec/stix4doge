@@ -10,26 +10,6 @@ from stix2 import Identity
 from stix2 import FileSystemStore
 from uuid import UUID
 
-# create the directories
-
-tmp_directories = [
-    "tmp_object_store/identity/arango_cti_processor",
-    "tmp_object_store/identity/cve2stix",
-    "tmp_object_store/identity/cwe2stix",
-    "tmp_object_store/identity/disarm2stix",
-    "tmp_object_store/identity/sigma2stix",
-    "tmp_object_store/identity/dogesec",
-    "tmp_object_store/identity/dogesec_demo",
-    "tmp_object_store/identity/stix2arango",
-   	"tmp_object_store/identity/txt2stix",
-    "tmp_object_store/identity/arango_cti_processor",
-    "tmp_object_store/identity/yara2stix"
-]
-
-for directory in tmp_directories:
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
 # define UUID for generating UUIDv5s
 
 namespace=UUID("1abb62b9-e513-5f55-8e73-8f6d7b55c237")
@@ -208,6 +188,21 @@ location2stix_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
+### ransomwhere2stix
+
+ransomwhere2stix_IdentitySDO = Identity(
+                        id="identity--" + str(uuid.uuid5(namespace, f"ransomwhere2stix")), # identity--904ac99b-7539-5de7-9ffa-23186f0e07b6
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        modified=modified,
+                        name="ransomwhere2stix",
+                        description=github_link+"ransomwhere2stix",
+                        contact_information= contact_information,
+                        identity_class=identity_class,
+                        sectors=sectors,
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/identity")
 generator.add_item("arango_cti_processor", arango_cti_processor_IdentitySDO)
@@ -216,19 +211,11 @@ generator.add_item("cwe2stix", cwe2stix_IdentitySDO)
 generator.add_item("disarm2stix", disarm2stix_IdentitySDO)
 generator.add_item("sigma2stix", sigma2stix_IdentitySDO)
 generator.add_item("dogesec", dogesec_IdentitySDO)
-generator.add_item("dogesec_demo", dogesec_demo_IdentitySDO)
 generator.add_item("stix2arango", stix2arango_IdentitySDO)
 generator.add_item("txt2stix", txt2stix_IdentitySDO)
 generator.add_item("yara2stix", yara2stix_IdentitySDO)
 generator.add_item("location2stix", location2stix_IdentitySDO)
+generator.add_item("ransomwhere2stix", ransomwhere2stix_IdentitySDO)
 generator.save_all()
 
-BundleofAllObjects = Bundle(
-                        id="bundle--" + str(uuid.uuid5(namespace, f"identity-bundle")), # bundle--7a3f56f9-a4dc-57cb-baaa-7577f60bd491
-                        objects=generator.items.values(),
-                        allow_custom=True
-                    )
-
-## Print the bundle
-
-print(BundleofAllObjects.serialize(pretty=True))
+print("Done.")

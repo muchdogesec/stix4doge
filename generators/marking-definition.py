@@ -10,28 +10,6 @@ from stix2 import MarkingDefinition
 from stix2 import FileSystemStore
 from uuid import UUID
 
-# create the directories
-
-tmp_directories = [
-    "tmp_object_store/marking-definition/cpe2stix",
-    "tmp_object_store/marking-definition/arango_cti_processor",
-    "tmp_object_store/marking-definition/cve2stix",
-    "tmp_object_store/marking-definition/cwe2stix",
-    "tmp_object_store/marking-definition/disarm2stix",
-    "tmp_object_store/marking-definition/txt2stix",
-    "tmp_object_store/marking-definition/sigma2stix",
-    "tmp_object_store/marking-definition/stix4doge",
-    "tmp_object_store/marking-definition/stix2arango",
-    "tmp_object_store/marking-definition/txt2stix",
-    "tmp_object_store/marking-definition/yara2stix"
-]
-
-for directory in tmp_directories:
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-# define UUID for generating UUIDv5s
-
 namespace=UUID("1abb62b9-e513-5f55-8e73-8f6d7b55c237")
 
 # define values that are recycled between objects
@@ -196,6 +174,19 @@ location2stix_MarkingDefinitionSMO = MarkingDefinition(
                         object_marking_refs=object_marking_refs
                     )
 
+### ransomwhere2stix
+
+ransomwhere2stix_MarkingDefinitionSMO = MarkingDefinition(
+                        id="marking-definition--" + str(uuid.uuid5(namespace, f"ransomwhere2stix")), #marking-definition--904ac99b-7539-5de7-9ffa-23186f0e07b6
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        definition_type=definition_type,
+                        definition= {
+                            "statement": "This object was created using: https://github.com/muchdogesec/ransomwhere2stix"
+                        },
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/marking-definition")
 generator.add_item("cpe2stix", cpe2stix_MarkingDefinitionSMO)
@@ -209,13 +200,5 @@ generator.add_item("stix4doge", stix4doge_MarkingDefinitionSMO)
 generator.add_item("txt2stix", txt2stix_MarkingDefinitionSMO)
 generator.add_item("yara2stix", yara2stix_MarkingDefinitionSMO)
 generator.add_item("location2stix", location2stix_MarkingDefinitionSMO)
+generator.add_item("ransomwhere2stix", ransomwhere2stix_MarkingDefinitionSMO)
 generator.save_all()
-
-BundleofAllObjects = Bundle(
-                        id="bundle--" + str(uuid.uuid5(namespace, f"marking-definition-bundle")), # bundle--d447cc3c-b47b-50c7-b64f-363f247a80c0
-                        objects=generator.items.values(),
-                        allow_custom=True
-                    )
-## Print the bundle
-
-print(BundleofAllObjects.serialize(pretty=True))
