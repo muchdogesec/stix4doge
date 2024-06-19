@@ -21,10 +21,6 @@
 					"title": "id",
 					"pattern": "^bank-card--"
 				},
-				"bank": {
-					"type": "string",
-					"description": "Name of the bank account the manages the account."
-				},
 				"format": {
 					"type": "string",
 					"description": "The type of card.",
@@ -36,20 +32,19 @@
 				},
 				"number": {
 					"type": "string",
-					"description": "Full card number"
+					"description": "Full card number."
 				},
 				"scheme": {
 					"type": "string",
-					"description": "Full card number",
-					"enum": [
-						"mastercard",
-						"visa",
-						"diners_club",
-						"american_express",
-						"discover",
-						"union_pay",
-						"jcb"
-					]
+					"description": "Card scheme."
+				},
+				"brand": {
+					"type": "string",
+					"description": "Card brand."
+				},
+				"currency": {
+					"type": "string",
+					"description": "3 letter currency code for card currency."
 				},
 				"issuer_name": {
 					"type": "string",
@@ -57,7 +52,7 @@
 				},
 				"issuer_country": {
 					"type": "string",
-					"description": "The ISO 2 digit code for the country of issue."
+					"description": "The 3 digit code for the country of issue."
 				},
 				"holder_name": {
 					"type": "string",
@@ -74,10 +69,6 @@
 				"security_code": {
 					"type": "string",
 					"description": "The cards security code. Usually 3 or 4 digits."
-				},
-				"prepaid": {
-					"type": "boolean",
-					"description": "If the card is prepaid"
 				},
 				"extensions": {
 					"type": "object",

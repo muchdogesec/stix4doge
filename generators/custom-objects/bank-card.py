@@ -27,13 +27,14 @@ example_bankCardSCO = BankCard(
                     format="credit",
                     number="4242424242424242",
                     scheme="VISA",
+                    brand="VISA",
+                    currency="GBP",
                     issuer_name="Big Bank",
-                    issuer_country="GB",
+                    issuer_country="GBR",
                     holder_name="DOGESEC",
                     valid_from="01/99",
                     valid_to="01/00",
-                    security_code="999",
-                    prepaid=False
+                    security_code="999"
                     )
 
 # Write the objects to the filestore

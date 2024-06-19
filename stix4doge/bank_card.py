@@ -3,7 +3,7 @@ from stix2 import CustomObservable
 from stix2.properties import (
     ExtensionsProperty, ReferenceProperty,
     IDProperty, ListProperty, StringProperty,
-    TypeProperty, BooleanProperty
+    TypeProperty
 )
 from ._extensions import bank_card_ExtensionDefinitionSMO
 
@@ -15,13 +15,14 @@ _type = 'bank-card'
     ('format', StringProperty()),
     ('number', StringProperty(required=True)),
     ('scheme', StringProperty()),
+    ('brand', StringProperty()),
+    ('currency', StringProperty()),
     ('issuer_name', StringProperty()),
     ('issuer_country', StringProperty()),
     ('holder_name', StringProperty()),
     ('valid_from', StringProperty()),
     ('valid_to', StringProperty()),
     ('security_code', StringProperty()),
-    ('prepaid', BooleanProperty()),
     ('object_marking_refs', ListProperty(ReferenceProperty(valid_types='marking-definition', spec_version='2.1'))),
     # ('extensions', ExtensionsProperty(spec_version='2.1'))
 ], extension_name=bank_card_ExtensionDefinitionSMO.id, id_contrib_props=['number'])
