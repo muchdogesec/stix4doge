@@ -57,7 +57,7 @@
 				},
 				"issuer_country": {
 					"type": "string",
-					"description": "The ISO 3 digit code for the country of issue."
+					"description": "The ISO 2 digit code for the country of issue."
 				},
 				"holder_name": {
 					"type": "string",
