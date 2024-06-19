@@ -17,7 +17,7 @@ _type = 'bank-card'
     ('scheme', StringProperty()),
     ('issuer_name', StringProperty()),
     ('issuer_country', StringProperty()),
-    ('cardholder_name', StringProperty()),
+    ('holder_name', StringProperty()),
     ('valid_from', StringProperty()),
     ('valid_to', StringProperty()),
     ('security_code', StringProperty()),

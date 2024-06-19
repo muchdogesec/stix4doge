@@ -7,7 +7,7 @@
     "scheme": "VISA",
     "issuer_name": "Big Bank",
     "issuer_country": "GBR",
-    "cardholder_name": "DOGESEC",
+    "holder_name": "DOGESEC",
     "valid_from": "01/99",
     "valid_to": "01/00",
     "security_code": "999",

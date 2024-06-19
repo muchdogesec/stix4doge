@@ -59,7 +59,7 @@
 					"type": "string",
 					"description": "The ISO 3 digit code for the country of issue."
 				},
-				"cardholder_name": {
+				"holder_name": {
 					"type": "string",
 					"description": "The name on the card."
 				},
