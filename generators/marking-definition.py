@@ -187,6 +187,19 @@ ransomwhere2stix_MarkingDefinitionSMO = MarkingDefinition(
                         object_marking_refs=object_marking_refs
                     )
 
+### creditcard2stix
+
+creditcard2stix_MarkingDefinitionSMO = MarkingDefinition(
+                        id="marking-definition--" + str(uuid.uuid5(namespace, f"creditcard2stix")), #marking-definition--d287a5a4-facc-5254-9563-9e92e3e729ac
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        definition_type=definition_type,
+                        definition= {
+                            "statement": "This object was created using: https://github.com/muchdogesec/creditcard2stix"
+                        },
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/marking-definition")
 generator.add_item("cpe2stix", cpe2stix_MarkingDefinitionSMO)
@@ -201,4 +214,5 @@ generator.add_item("txt2stix", txt2stix_MarkingDefinitionSMO)
 generator.add_item("yara2stix", yara2stix_MarkingDefinitionSMO)
 generator.add_item("location2stix", location2stix_MarkingDefinitionSMO)
 generator.add_item("ransomwhere2stix", ransomwhere2stix_MarkingDefinitionSMO)
+generator.add_item("creditcard2stix", creditcard2stix_MarkingDefinitionSMO)
 generator.save_all()

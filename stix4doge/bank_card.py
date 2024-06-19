@@ -3,7 +3,7 @@ from stix2 import CustomObservable
 from stix2.properties import (
     ExtensionsProperty, ReferenceProperty,
     IDProperty, ListProperty, StringProperty,
-    TypeProperty,
+    TypeProperty, BooleanProperty
 )
 from ._extensions import bank_card_ExtensionDefinitionSMO
 

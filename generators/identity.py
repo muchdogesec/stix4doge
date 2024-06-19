@@ -203,6 +203,21 @@ ransomwhere2stix_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
+### creditcard2stix
+
+creditcard2stix_IdentitySDO = Identity(
+                        id="identity--" + str(uuid.uuid5(namespace, f"creditcard2stix")), # identity--d287a5a4-facc-5254-9563-9e92e3e729ac
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        modified=modified,
+                        name="creditcard2stix",
+                        description=github_link+"creditcard2stix",
+                        contact_information= contact_information,
+                        identity_class=identity_class,
+                        sectors=sectors,
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/identity")
 generator.add_item("arango_cti_processor", arango_cti_processor_IdentitySDO)
@@ -216,6 +231,7 @@ generator.add_item("txt2stix", txt2stix_IdentitySDO)
 generator.add_item("yara2stix", yara2stix_IdentitySDO)
 generator.add_item("location2stix", location2stix_IdentitySDO)
 generator.add_item("ransomwhere2stix", ransomwhere2stix_IdentitySDO)
+generator.add_item("creditcard2stix", creditcard2stix_IdentitySDO)
 generator.save_all()
 
 print("Done.")
