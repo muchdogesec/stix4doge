@@ -75,6 +75,10 @@
 					"type": "string",
 					"description": "The cards security code. Usually 3 or 4 digits."
 				},
+				"prepaid": {
+					"type": "boolean",
+					"description": "If the card is prepaid"
+				},
 				"extensions": {
 					"type": "object",
 					"properties": {
