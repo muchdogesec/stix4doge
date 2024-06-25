@@ -17,7 +17,7 @@ for directory in tmp_directories:
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-# define UUID for generating UUIDv5s
+# define UUID for generating UUIDv5s -- use stix4doge namespace as this is an SDO
 
 namespace=UUID("1abb62b9-e513-5f55-8e73-8f6d7b55c237")
 

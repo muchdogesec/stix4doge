@@ -16,9 +16,9 @@ for directory in tmp_directories:
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-# define UUID for generating UUIDv5s
+# define UUID for generating UUIDv5s -- this is the OASIS namespace for SCOs https://github.com/oasis-open/cti-python-stix2/blob/master/stix2/base.py#L29
 
-namespace=UUID("1abb62b9-e513-5f55-8e73-8f6d7b55c237")
+namespace=UUID("00abedb4-aa42-466c-9c01-fed23315a9b7")
 
 # Create bank account SCO
 
