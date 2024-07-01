@@ -106,7 +106,7 @@ def create_objects(card_data, api_key):
     if bin_data and bin_data['BIN']['valid']:
         identity = create_identity(bin_data)
         relationship = create_relationship(identity.id, card.id)
-        return [identity, card, relationship]
+        return [card, identity, relationship]
     return [card]
 
 if __name__ == '__main__':
