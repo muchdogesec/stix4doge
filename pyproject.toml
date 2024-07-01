@@ -18,6 +18,7 @@ classifiers = [
 ]
 dependencies = [
     "stix2",
+    "requests"
     ]
 [project.urls]
 Homepage = "https://github.com/muchdogesec/stix4doge"
