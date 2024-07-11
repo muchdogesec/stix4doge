@@ -211,6 +211,17 @@ stix2extensions_MarkingDefinitionSMO = MarkingDefinition(
                         object_marking_refs=object_marking_refs
                     )
 
+feeds2stix_MarkingDefinitionSMO = MarkingDefinition(
+                        id="marking-definition--" + str(uuid.uuid5(namespace, f"feeds2stix")), # marking-definition--a1cb37d2-3bd3-5b23-8526-47a22694b7e0
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        definition_type=definition_type,
+                        definition= {
+                            "statement": "This object was created using: https://github.com/muchdogesec/feeds2stix"
+                        },
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/marking-definition")
 generator.add_item("cpe2stix", cpe2stix_MarkingDefinitionSMO)
@@ -227,4 +238,5 @@ generator.add_item("location2stix", location2stix_MarkingDefinitionSMO)
 generator.add_item("ransomwhere2stix", ransomwhere2stix_MarkingDefinitionSMO)
 generator.add_item("creditcard2stix", creditcard2stix_MarkingDefinitionSMO)
 generator.add_item("stix2extensions", stix2extensions_MarkingDefinitionSMO)
+generator.add_item("feeds2stix", stix2extensions_MarkingDefinitionSMO)
 generator.save_all()

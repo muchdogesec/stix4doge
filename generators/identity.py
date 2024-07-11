@@ -218,6 +218,21 @@ creditcard2stix_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
+### feeds2stix
+
+feeds2stix_IdentitySDO = Identity(
+                        id="identity--" + str(uuid.uuid5(namespace, f"feeds2stix")), # identity--a1cb37d2-3bd3-5b23-8526-47a22694b7e0
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        modified=modified,
+                        name="feeds2stix",
+                        description=github_link+"feeds2stix",
+                        contact_information= contact_information,
+                        identity_class=identity_class,
+                        sectors=sectors,
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/identity")
 generator.add_item("arango_cti_processor", arango_cti_processor_IdentitySDO)
@@ -232,6 +247,7 @@ generator.add_item("yara2stix", yara2stix_IdentitySDO)
 generator.add_item("location2stix", location2stix_IdentitySDO)
 generator.add_item("ransomwhere2stix", ransomwhere2stix_IdentitySDO)
 generator.add_item("creditcard2stix", creditcard2stix_IdentitySDO)
+generator.add_item("feeds2stix", feeds2stix_IdentitySDO)
 generator.save_all()
 
 print("Done.")
