@@ -174,19 +174,6 @@ location2stix_MarkingDefinitionSMO = MarkingDefinition(
                         object_marking_refs=object_marking_refs
                     )
 
-### ransomwhere2stix
-
-ransomwhere2stix_MarkingDefinitionSMO = MarkingDefinition(
-                        id="marking-definition--" + str(uuid.uuid5(namespace, f"ransomwhere2stix")), #marking-definition--904ac99b-7539-5de7-9ffa-23186f0e07b6
-                        created_by_ref=created_by_ref,
-                        created=created,
-                        definition_type=definition_type,
-                        definition= {
-                            "statement": "This object was created using: https://github.com/muchdogesec/ransomwhere2stix"
-                        },
-                        object_marking_refs=object_marking_refs
-                    )
-
 ### creditcard2stix
 
 creditcard2stix_MarkingDefinitionSMO = MarkingDefinition(
@@ -253,7 +240,6 @@ generator.add_item("stix4doge", stix4doge_MarkingDefinitionSMO)
 generator.add_item("txt2stix", txt2stix_MarkingDefinitionSMO)
 generator.add_item("yara2stix", yara2stix_MarkingDefinitionSMO)
 generator.add_item("location2stix", location2stix_MarkingDefinitionSMO)
-generator.add_item("ransomwhere2stix", ransomwhere2stix_MarkingDefinitionSMO)
 generator.add_item("creditcard2stix", creditcard2stix_MarkingDefinitionSMO)
 generator.add_item("stix2extensions", stix2extensions_MarkingDefinitionSMO)
 generator.add_item("feeds2stix", feeds2stix_MarkingDefinitionSMO)

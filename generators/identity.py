@@ -188,21 +188,6 @@ location2stix_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
-### ransomwhere2stix
-
-ransomwhere2stix_IdentitySDO = Identity(
-                        id="identity--" + str(uuid.uuid5(namespace, f"ransomwhere2stix")), # identity--904ac99b-7539-5de7-9ffa-23186f0e07b6
-                        created_by_ref=created_by_ref,
-                        created=created,
-                        modified=modified,
-                        name="ransomwhere2stix",
-                        description=github_link+"ransomwhere2stix",
-                        contact_information= contact_information,
-                        identity_class=identity_class,
-                        sectors=sectors,
-                        object_marking_refs=object_marking_refs
-                    )
-
 ### creditcard2stix
 
 creditcard2stix_IdentitySDO = Identity(
@@ -260,7 +245,6 @@ generator.add_item("stix2arango", stix2arango_IdentitySDO)
 generator.add_item("txt2stix", txt2stix_IdentitySDO)
 generator.add_item("yara2stix", yara2stix_IdentitySDO)
 generator.add_item("location2stix", location2stix_IdentitySDO)
-generator.add_item("ransomwhere2stix", ransomwhere2stix_IdentitySDO)
 generator.add_item("creditcard2stix", creditcard2stix_IdentitySDO)
 generator.add_item("feeds2stix", feeds2stix_IdentitySDO)
 generator.add_item("stixify", stixify_IdentitySDO)
