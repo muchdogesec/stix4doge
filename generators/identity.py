@@ -233,20 +233,6 @@ stixify_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
-### crypto_kb
-
-crypto_kb_IdentitySDO = Identity(
-                        id="identity--" + str(uuid.uuid5(namespace, f"crypto_kb")), # identity--9b9c892f-bab3-5be5-b3bf-d2b5c21775b7
-                        created_by_ref=created_by_ref,
-                        created=created,
-                        modified=modified,
-                        name="Crypto KB",
-                        description=github_link+"crypto_kb",
-                        contact_information= contact_information,
-                        identity_class=identity_class,
-                        sectors=sectors,
-                        object_marking_refs=object_marking_refs
-                    )
 from utils import Generator
 generator = Generator("objects/identity")
 generator.add_item("arango_cti_processor", arango_cti_processor_IdentitySDO)
@@ -262,7 +248,6 @@ generator.add_item("location2stix", location2stix_IdentitySDO)
 generator.add_item("creditcard2stix", creditcard2stix_IdentitySDO)
 generator.add_item("feeds2stix", feeds2stix_IdentitySDO)
 generator.add_item("stixify", stixify_IdentitySDO)
-generator.add_item("crypto_kb", crypto_kb_IdentitySDO)
 generator.save_all()
 
 print("Done.")

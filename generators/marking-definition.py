@@ -226,19 +226,6 @@ stixify_MarkingDefinitionSMO = MarkingDefinition(
                         object_marking_refs=object_marking_refs
                     )
 
-### crypto_kb
-
-crypto_kb_MarkingDefinitionSMO = MarkingDefinition(
-                        id="marking-definition--" + str(uuid.uuid5(namespace, f"crypto_kb")), # marking-definition--9b9c892f-bab3-5be5-b3bf-d2b5c21775b7
-                        created_by_ref=created_by_ref,
-                        created=created,
-                        definition_type=definition_type,
-                        definition= {
-                            "statement": "This object was created using: https://github.com/muchdogesec/crypto_kb"
-                        },
-                        object_marking_refs=object_marking_refs
-                    )
-
 from utils import Generator
 generator = Generator("objects/marking-definition")
 generator.add_item("cpe2stix", cpe2stix_MarkingDefinitionSMO)
@@ -256,5 +243,4 @@ generator.add_item("creditcard2stix", creditcard2stix_MarkingDefinitionSMO)
 generator.add_item("stix2extensions", stix2extensions_MarkingDefinitionSMO)
 generator.add_item("feeds2stix", feeds2stix_MarkingDefinitionSMO)
 generator.add_item("stixify", stixify_MarkingDefinitionSMO)
-generator.add_item("crypto_kb", crypto_kb_MarkingDefinitionSMO)
 generator.save_all()
