@@ -233,6 +233,21 @@ stixify_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
+### Ransomware Knowledgebase
+
+ransomware_kb_IdentitySDO = Identity(
+                        id="identity--" + str(uuid.uuid5(namespace, f"ransomware_kb")), # identity--221c1248-e62e-56e5-bbfb-7d5efc477271
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        modified=modified,
+                        name="Ransomware Knowledgebase",
+                        description=github_link+"ransomware_kb",
+                        contact_information= contact_information,
+                        identity_class=identity_class,
+                        sectors=sectors,
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/identity")
 generator.add_item("arango_cti_processor", arango_cti_processor_IdentitySDO)
@@ -248,6 +263,8 @@ generator.add_item("location2stix", location2stix_IdentitySDO)
 generator.add_item("creditcard2stix", creditcard2stix_IdentitySDO)
 generator.add_item("feeds2stix", feeds2stix_IdentitySDO)
 generator.add_item("stixify", stixify_IdentitySDO)
+generator.add_item("ransomware_kb", ransomware_kb_IdentitySDO)
+
 generator.save_all()
 
 print("Done.")
