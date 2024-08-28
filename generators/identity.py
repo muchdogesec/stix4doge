@@ -248,6 +248,21 @@ ransomware_kb_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
+### obstracts
+
+obstracts_IdentitySDO = Identity(
+                        id="identity--" + str(uuid.uuid5(namespace, f"obstracts")), # identity--a1f2e3ed-6241-5f05-ac2e-3394213b8e08
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        modified=modified,
+                        name="obstracts",
+                        description=github_link+"obstracts",
+                        contact_information= contact_information,
+                        identity_class=identity_class,
+                        sectors=sectors,
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/identity")
 generator.add_item("arango_cti_processor", arango_cti_processor_IdentitySDO)
@@ -264,6 +279,7 @@ generator.add_item("creditcard2stix", creditcard2stix_IdentitySDO)
 generator.add_item("feeds2stix", feeds2stix_IdentitySDO)
 generator.add_item("stixify", stixify_IdentitySDO)
 generator.add_item("ransomware_kb", ransomware_kb_IdentitySDO)
+generator.add_item("obstracts", obstracts_IdentitySDO)
 
 generator.save_all()
 

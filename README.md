@@ -2,6 +2,8 @@
 
 ## Overview
 
+![](docs/stix4doge.png)
+
 This repository is uses to generate STIX objects used by DOGESEC products.
 
 ## Code generator

@@ -213,19 +213,6 @@ feeds2stix_MarkingDefinitionSMO = MarkingDefinition(
                         object_marking_refs=object_marking_refs
                     )
 
-### stixify
-
-stixify_MarkingDefinitionSMO = MarkingDefinition(
-                        id="marking-definition--" + str(uuid.uuid5(namespace, f"stixify")), # marking-definition--e92c648d-03eb-59a5-a318-9a36e6f8057c
-                        created_by_ref=created_by_ref,
-                        created=created,
-                        definition_type=definition_type,
-                        definition= {
-                            "statement": "This object was created using: https://github.com/muchdogesec/stixify"
-                        },
-                        object_marking_refs=object_marking_refs
-                    )
-
 ### Ransomware Knowledgebase
 
 ransomware_kb_MarkingDefinitionSMO = MarkingDefinition(
@@ -255,6 +242,5 @@ generator.add_item("location2stix", location2stix_MarkingDefinitionSMO)
 generator.add_item("creditcard2stix", creditcard2stix_MarkingDefinitionSMO)
 generator.add_item("stix2extensions", stix2extensions_MarkingDefinitionSMO)
 generator.add_item("feeds2stix", feeds2stix_MarkingDefinitionSMO)
-generator.add_item("stixify", stixify_MarkingDefinitionSMO)
 generator.add_item("ransomware_kb", ransomware_kb_MarkingDefinitionSMO)
 generator.save_all()
