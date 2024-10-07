@@ -226,6 +226,17 @@ ransomware_kb_MarkingDefinitionSMO = MarkingDefinition(
                         object_marking_refs=object_marking_refs
                     )
 
+siemrules_MarkingDefinitionSMO = MarkingDefinition(
+                        id="marking-definition--" + str(uuid.uuid5(namespace, f"siemrules")), # marking-definition--8ef05850-cb0d-51f7-80be-50e4376dbe63
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        definition_type=definition_type,
+                        definition= {
+                            "statement": "This object was created using: https://github.com/muchdogesec/siemrules"
+                        },
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/marking-definition")
 generator.add_item("cpe2stix", cpe2stix_MarkingDefinitionSMO)
@@ -243,4 +254,5 @@ generator.add_item("creditcard2stix", creditcard2stix_MarkingDefinitionSMO)
 generator.add_item("stix2extensions", stix2extensions_MarkingDefinitionSMO)
 generator.add_item("feeds2stix", feeds2stix_MarkingDefinitionSMO)
 generator.add_item("ransomware_kb", ransomware_kb_MarkingDefinitionSMO)
+generator.add_item("siemrules", siemrules_MarkingDefinitionSMO)
 generator.save_all()

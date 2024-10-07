@@ -218,21 +218,6 @@ feeds2stix_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
-### stixify
-
-stixify_IdentitySDO = Identity(
-                        id="identity--" + str(uuid.uuid5(namespace, f"stixify")), # identity--e92c648d-03eb-59a5-a318-9a36e6f8057c
-                        created_by_ref=created_by_ref,
-                        created=created,
-                        modified=modified,
-                        name="stixify",
-                        description=github_link+"stixify",
-                        contact_information= contact_information,
-                        identity_class=identity_class,
-                        sectors=sectors,
-                        object_marking_refs=object_marking_refs
-                    )
-
 ### Ransomware Knowledgebase
 
 ransomware_kb_IdentitySDO = Identity(
@@ -242,6 +227,21 @@ ransomware_kb_IdentitySDO = Identity(
                         modified=modified,
                         name="Ransomware Knowledgebase",
                         description=github_link+"ransomware_kb",
+                        contact_information= contact_information,
+                        identity_class=identity_class,
+                        sectors=sectors,
+                        object_marking_refs=object_marking_refs
+                    )
+
+### stixify
+
+stixify_IdentitySDO = Identity(
+                        id="identity--" + str(uuid.uuid5(namespace, f"stixify")), # identity--e92c648d-03eb-59a5-a318-9a36e6f8057c
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        modified=modified,
+                        name="stixify",
+                        description=github_link+"stixify",
                         contact_information= contact_information,
                         identity_class=identity_class,
                         sectors=sectors,
@@ -263,6 +263,21 @@ obstracts_IdentitySDO = Identity(
                         object_marking_refs=object_marking_refs
                     )
 
+### siem_rules
+
+siemrules_IdentitySDO = Identity(
+                        id="identity--" + str(uuid.uuid5(namespace, f"siemrules")), # identity--8ef05850-cb0d-51f7-80be-50e4376dbe63
+                        created_by_ref=created_by_ref,
+                        created=created,
+                        modified=modified,
+                        name="siemrules",
+                        description=github_link+"siemrules",
+                        contact_information= contact_information,
+                        identity_class=identity_class,
+                        sectors=sectors,
+                        object_marking_refs=object_marking_refs
+                    )
+
 from utils import Generator
 generator = Generator("objects/identity")
 generator.add_item("arango_cti_processor", arango_cti_processor_IdentitySDO)
@@ -277,9 +292,10 @@ generator.add_item("yara2stix", yara2stix_IdentitySDO)
 generator.add_item("location2stix", location2stix_IdentitySDO)
 generator.add_item("creditcard2stix", creditcard2stix_IdentitySDO)
 generator.add_item("feeds2stix", feeds2stix_IdentitySDO)
-generator.add_item("stixify", stixify_IdentitySDO)
 generator.add_item("ransomware_kb", ransomware_kb_IdentitySDO)
+generator.add_item("stixify", stixify_IdentitySDO)
 generator.add_item("obstracts", obstracts_IdentitySDO)
+generator.add_item("siemrules", siemrules_IdentitySDO)
 
 generator.save_all()
 
