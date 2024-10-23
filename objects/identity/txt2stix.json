@@ -6,7 +6,7 @@
     "created": "2020-01-01T00:00:00.000Z",
     "modified": "2020-01-01T00:00:00.000Z",
     "name": "txt2stix",
-    "description": "https://github.com/muchdogsec/txt2stix",
+    "description": "https://github.com/muchdogesec/txt2stix",
     "identity_class": "system",
     "sectors": [
         "technology"
