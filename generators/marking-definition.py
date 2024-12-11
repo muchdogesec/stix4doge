@@ -31,7 +31,7 @@ marking_names = [
     "yara2stix", "arango_cti_processor", "cve2stix", "cpe2stix", "stix2arango",
     "sigma2stix", "disarm2stix", "stix4doge", "cwe2stix", "txt2stix",
     "location2stix", "creditcard2stix", "stix2extensions", "feeds2stix",
-    "ransomware_kb", "siemrules", "arango_cve_processor"
+    "ransomwarekb", "siemrules", "arango_cve_processor"
 ]
 
 # Ensure the output directory for individual marking definitions exists

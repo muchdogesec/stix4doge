@@ -1,6 +1,6 @@
 {
     "type": "bundle",
-    "id": "bundle--8826bc89-f36b-5373-8784-fa6e48f8b1d0",
+    "id": "bundle--d2b3df84-8b14-586b-aab3-af9c947f15e3",
     "objects": [
         {
             "type": "marking-definition",
@@ -11,21 +11,6 @@
             "definition_type": "statement",
             "definition": {
                 "statement": "This object was created using: https://github.com/muchdogesec/arango_cve_processor"
-            },
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "marking-definition",
-            "spec_version": "2.1",
-            "id": "marking-definition--221c1248-e62e-56e5-bbfb-7d5efc477271",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "definition_type": "statement",
-            "definition": {
-                "statement": "This object was created using: https://github.com/muchdogesec/ransomware_kb"
             },
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
@@ -56,6 +41,21 @@
             "definition_type": "statement",
             "definition": {
                 "statement": "This object was created using: https://github.com/muchdogesec/arango_cti_processor"
+            },
+            "object_marking_refs": [
+                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
+            ]
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--41a1e3bb-3df0-5dda-8c72-85d42f5653bb",
+            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
+            "created": "2020-01-01T00:00:00.000Z",
+            "definition_type": "statement",
+            "definition": {
+                "statement": "This object was created using: https://github.com/muchdogesec/ransomwarekb"
             },
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
