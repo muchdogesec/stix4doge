@@ -1,6 +1,6 @@
 {
     "type": "bundle",
-    "id": "bundle--c8eb1d5d-cba2-503e-bc46-c1ec5793bee4",
+    "id": "bundle--d173a524-a2d2-59c7-9db6-840a60241a8c",
     "objects": [
         {
             "type": "identity",
@@ -62,25 +62,6 @@
         {
             "type": "identity",
             "spec_version": "2.1",
-            "id": "identity--41a1e3bb-3df0-5dda-8c72-85d42f5653bb",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "ransomwarekb",
-            "description": "https://github.com/muchdogesec/ransomwarekb",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "identity",
-            "spec_version": "2.1",
             "id": "identity--562918ee-d5da-5579-b6a1-fae50cc6bad3",
             "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
             "created": "2020-01-01T00:00:00.000Z",
@@ -125,6 +106,25 @@
             "modified": "2020-01-01T00:00:00.000Z",
             "name": "stix2arango",
             "description": "https://github.com/muchdogesec/stix2arango",
+            "identity_class": "system",
+            "sectors": [
+                "technology"
+            ],
+            "contact_information": "https://www.dogesec.com/contact/",
+            "object_marking_refs": [
+                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--7bae962c-40ae-5817-8cdc-e1b6eb4f38f5",
+            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
+            "created": "2020-01-01T00:00:00.000Z",
+            "modified": "2020-01-01T00:00:00.000Z",
+            "name": "ransomware2stix",
+            "description": "https://github.com/muchdogesec/ransomware2stix",
             "identity_class": "system",
             "sectors": [
                 "technology"
