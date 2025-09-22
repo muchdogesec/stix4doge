@@ -1,6 +1,6 @@
 {
     "type": "bundle",
-    "id": "bundle--958550a6-5b9d-58c3-81be-72ece9e63000",
+    "id": "bundle--824bc98a-774c-5137-82eb-b63561ab932b",
     "objects": [
         {
             "type": "identity",
@@ -219,8 +219,7 @@
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ],
-            "x_opencti_organization_type": "vendor"
+            ]
         },
         {
             "type": "identity",

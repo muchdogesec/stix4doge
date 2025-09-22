@@ -57,8 +57,6 @@ for identity_name in sorted(identity_names):  # Sorting the identity names to en
             confidence=100,
             sectors=sectors,
             object_marking_refs=object_marking_refs,
-            x_opencti_organization_type="vendor",
-            allow_custom=True,
         )
     else:
         identity_sdo = Identity(
