@@ -1,6 +1,6 @@
 {
     "type": "bundle",
-    "id": "bundle--d173a524-a2d2-59c7-9db6-840a60241a8c",
+    "id": "bundle--958550a6-5b9d-58c3-81be-72ece9e63000",
     "objects": [
         {
             "type": "identity",
@@ -16,6 +16,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -35,6 +36,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -54,6 +56,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -73,6 +76,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -92,6 +96,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -111,6 +116,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -130,6 +136,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -149,6 +156,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -168,6 +176,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -187,6 +196,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -205,10 +215,12 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
+            ],
+            "x_opencti_organization_type": "vendor"
         },
         {
             "type": "identity",
@@ -224,6 +236,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -243,6 +256,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -262,6 +276,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -281,6 +296,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -300,6 +316,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -319,6 +336,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
@@ -338,6 +356,7 @@
                 "technology"
             ],
             "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
             "object_marking_refs": [
                 "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
                 "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"

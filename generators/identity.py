@@ -54,8 +54,11 @@ for identity_name in sorted(identity_names):  # Sorting the identity names to en
             description=github_link,  # Custom description for dogesec
             contact_information=contact_information,
             identity_class="organization",
+            confidence=100,
             sectors=sectors,
-            object_marking_refs=object_marking_refs
+            object_marking_refs=object_marking_refs,
+            x_opencti_organization_type="vendor",
+            allow_custom=True,
         )
     else:
         identity_sdo = Identity(
@@ -67,8 +70,9 @@ for identity_name in sorted(identity_names):  # Sorting the identity names to en
             description=github_link + identity_name,
             contact_information=contact_information,
             identity_class=identity_class,
+            confidence=100,
             sectors=sectors,
-            object_marking_refs=object_marking_refs
+            object_marking_refs=object_marking_refs,
         )
     
     identities.append(identity_sdo)
