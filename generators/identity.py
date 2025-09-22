@@ -55,7 +55,8 @@ for identity_name in sorted(identity_names):  # Sorting the identity names to en
             contact_information=contact_information,
             identity_class="organization",
             sectors=sectors,
-            object_marking_refs=object_marking_refs
+            object_marking_refs=object_marking_refs,
+            x_opencti_organization_type="vendor"
         )
     else:
         identity_sdo = Identity(
@@ -68,7 +69,8 @@ for identity_name in sorted(identity_names):  # Sorting the identity names to en
             contact_information=contact_information,
             identity_class=identity_class,
             sectors=sectors,
-            object_marking_refs=object_marking_refs
+            object_marking_refs=object_marking_refs,
+            x_opencti_organization_type="other"
         )
     
     identities.append(identity_sdo)
