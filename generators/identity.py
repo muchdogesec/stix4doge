@@ -33,9 +33,9 @@ identities = []
 identity_names = [
     "arango_cti_processor", 
     "sigma2stix", "dogesec", "stix2arango", "txt2stix",
-    "yara2stix", "location2stix", "creditcard2stix",
+    "yara2stix", "creditcard2stix",
     "feeds2stix", "stixify", "obstracts", "siemrules",
-    "arango_cve_processor", "txt2detection", "ransomware2stix"
+    "txt2detection", "ransomware2stix"
 ]
 
 # Ensure the output directory for individual identity objects exists
