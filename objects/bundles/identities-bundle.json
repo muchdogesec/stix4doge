@@ -1,27 +1,7 @@
 {
     "type": "bundle",
-    "id": "bundle--824bc98a-774c-5137-82eb-b63561ab932b",
+    "id": "bundle--a956b668-49aa-5297-bcdf-ee8a53eff1c1",
     "objects": [
-        {
-            "type": "identity",
-            "spec_version": "2.1",
-            "id": "identity--152ecfe1-5015-522b-97e4-86b60c57036d",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "arango_cve_processor",
-            "description": "https://github.com/muchdogesec/arango_cve_processor",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "confidence": 100,
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
         {
             "type": "identity",
             "spec_version": "2.1",
@@ -31,66 +11,6 @@
             "modified": "2020-01-01T00:00:00.000Z",
             "name": "yara2stix",
             "description": "https://github.com/muchdogesec/yara2stix",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "confidence": 100,
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "identity",
-            "spec_version": "2.1",
-            "id": "identity--2e51a631-99d8-52a5-95a6-8314d3f4fbf3",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "arango_cti_processor",
-            "description": "https://github.com/muchdogesec/arango_cti_processor",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "confidence": 100,
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "identity",
-            "spec_version": "2.1",
-            "id": "identity--562918ee-d5da-5579-b6a1-fae50cc6bad3",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "cve2stix",
-            "description": "https://github.com/muchdogesec/cve2stix",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "confidence": 100,
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "identity",
-            "spec_version": "2.1",
-            "id": "identity--674a16c1-8b43-5c3e-8692-b3d8935e4903",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "location2stix",
-            "description": "https://github.com/muchdogesec/location2stix",
             "identity_class": "system",
             "sectors": [
                 "technology"
@@ -151,26 +71,6 @@
             "modified": "2020-01-01T00:00:00.000Z",
             "name": "sigma2stix",
             "description": "https://github.com/muchdogesec/sigma2stix",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "confidence": 100,
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "identity",
-            "spec_version": "2.1",
-            "id": "identity--8700e156-6ce9-5090-8589-f9d0aef7bdb7",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "disarm2stix",
-            "description": "https://github.com/muchdogesec/disarm2stix",
             "identity_class": "system",
             "sectors": [
                 "technology"
@@ -270,46 +170,6 @@
             "modified": "2020-01-01T00:00:00.000Z",
             "name": "txt2detection",
             "description": "https://github.com/muchdogesec/txt2detection",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "confidence": 100,
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "identity",
-            "spec_version": "2.1",
-            "id": "identity--d287a5a4-facc-5254-9563-9e92e3e729ac",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "creditcard2stix",
-            "description": "https://github.com/muchdogesec/creditcard2stix",
-            "identity_class": "system",
-            "sectors": [
-                "technology"
-            ],
-            "contact_information": "https://www.dogesec.com/contact/",
-            "confidence": 100,
-            "object_marking_refs": [
-                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
-                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
-            ]
-        },
-        {
-            "type": "identity",
-            "spec_version": "2.1",
-            "id": "identity--d91de5c9-2d85-5cc9-97c0-c5ec8deb1a4b",
-            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
-            "created": "2020-01-01T00:00:00.000Z",
-            "modified": "2020-01-01T00:00:00.000Z",
-            "name": "cwe2stix",
-            "description": "https://github.com/muchdogesec/cwe2stix",
             "identity_class": "system",
             "sectors": [
                 "technology"

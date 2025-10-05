@@ -31,10 +31,8 @@ github_link = "https://github.com/muchdogesec/"
 identities = []
 
 identity_names = [
-    "arango_cti_processor", 
     "sigma2stix", "dogesec", "stix2arango", "txt2stix",
-    "yara2stix", "creditcard2stix",
-    "feeds2stix", "stixify", "obstracts", "siemrules",
+    "yara2stix", "feeds2stix", "stixify", "obstracts", "siemrules",
     "txt2detection", "ransomware2stix"
 ]
 
