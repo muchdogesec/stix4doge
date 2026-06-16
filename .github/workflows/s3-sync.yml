@@ -1,0 +1,36 @@
+name: Sync JSON objects to S3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "objects/*/*.json"
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    name: Upload JSON objects
+    runs-on: ubuntu-latest
+    environment: s3_env
+    env:
+      S3_ENDPOINT_URL: https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
+      AWS_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_ACCESS_KEY_ID }}
+      AWS_DEFAULT_REGION: auto
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_ACCESS_KEY_SECRET }}
+      S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sync JSON files
+        shell: bash
+        run: |
+          aws s3 sync . "s3://${S3_BUCKET_NAME}/stix4doge/" \
+            --endpoint-url "${S3_ENDPOINT_URL}" \
+            --delete \
+            --exclude "*" \
+            --include "objects/*/*.json"
