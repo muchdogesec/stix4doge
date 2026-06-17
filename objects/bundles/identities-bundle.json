@@ -1,6 +1,6 @@
 {
     "type": "bundle",
-    "id": "bundle--a956b668-49aa-5297-bcdf-ee8a53eff1c1",
+    "id": "bundle--bb7c4b06-3b43-563f-b4c8-37f0bd9a11e7",
     "objects": [
         {
             "type": "identity",
@@ -11,6 +11,26 @@
             "modified": "2020-01-01T00:00:00.000Z",
             "name": "yara2stix",
             "description": "https://github.com/muchdogesec/yara2stix",
+            "identity_class": "system",
+            "sectors": [
+                "technology"
+            ],
+            "contact_information": "https://www.dogesec.com/contact/",
+            "confidence": 100,
+            "object_marking_refs": [
+                "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+                "marking-definition--97ba4e8b-04f6-57e8-8f6e-3a0f0a7dc0fb"
+            ]
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--31afb25e-8f2c-58ea-9727-587c2e76c665",
+            "created_by_ref": "identity--9779a2db-f98c-5f4b-8d08-8ee04e02dbb5",
+            "created": "2020-01-01T00:00:00.000Z",
+            "modified": "2020-01-01T00:00:00.000Z",
+            "name": "cloak2stix",
+            "description": "https://github.com/muchdogesec/cloak2stix",
             "identity_class": "system",
             "sectors": [
                 "technology"
