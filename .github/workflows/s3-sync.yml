@@ -1,4 +1,4 @@
-name: Sync JSON objects to S3
+name: Sync JSON objects to Cloudflare R2
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
   sync:
     name: Upload JSON objects
     runs-on: ubuntu-latest
-    environment: s3_env
+    environment: cloudflare_r2
     env:
       S3_ENDPOINT_URL: https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
       AWS_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_ACCESS_KEY_ID }}
